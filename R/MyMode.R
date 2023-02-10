@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' \dontrun{mode(VoltageOld$VOLTAGE)}
-mode <- function(v) {
+getmode <- function(v) {
   uniqv <- unique(v)
   uniqv[which.max(tabulate(match(v, uniqv)))]
 }
